@@ -2,6 +2,11 @@
 
 This mini project aims to be a single and simple component for react-native applications. It provides a clear, configurable, and customizable bottom sheet imitating native bottom sheet behavior, built from scratch with no extra native dependencies, to overpower it and speed up the development process.
 
+
+![](demo/demo1.gif)  |
+:---------------:|
+
+
 ## Prerequisites
 
 - [Node.js > 12](https://nodejs.org)

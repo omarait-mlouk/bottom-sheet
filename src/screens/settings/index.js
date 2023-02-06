@@ -16,9 +16,10 @@ const Settings = () => {
 
     return (
         <View style={styles.container}>
-            <Text>Settings View</Text>
             <Button title='toggle' onPress={onBottomSheetHandler} />
-            <BottomSheet ref={bottomSheetRef}></BottomSheet>
+            <BottomSheet ref={bottomSheetRef}>
+                <View style={styles.bottomSheetContent}></View>
+            </BottomSheet>
         </View>
     )
 }
@@ -28,8 +29,12 @@ export default Settings
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#111',
+        backgroundColor: 'gray',
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    bottomSheetContent: {
+        flex: 1,
+        backgroundColor: '#ebebe8'
     }
 })
