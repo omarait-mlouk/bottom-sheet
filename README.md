@@ -13,7 +13,6 @@ This mini project aims to be a single and simple component for react-native appl
 
 ## Base dependencies
 
-- [react-native](https://reactnative.dev/) for creating the app.
 - [react-native-reanimated](https://www.reanimated2.com/) to create smooth animations and interactions that runs on the UI thread.
 - [react-native-gesture-handler](https://github.com/luggit/react-native-config) to replace React Native's built in touch system called Gesture Responder System.
 
@@ -24,6 +23,7 @@ Open a Terminal in the project root and run:
 ```sh
 npm install
 ```
+
 Or if you want to create your own project make sure to install the following dependencies [`react-native-gesture-handler`](https://github.com/kmagiera/react-native-gesture-handler) and [`react-native-reanimated`](https://github.com/kmagiera/react-native-reanimated).
 
 If you are using Expo, to ensure that you get the compatible versions of the libraries, run:
@@ -42,6 +42,14 @@ Or if you use npm:
 
 ```sh
 npm install react-native-reanimated react-native-gesture-handler
+```
+Make sure to add the following plugin in babel.config.js
+
+```javascript
+presets: ['babel-preset-expo'],
+plugins: [
+    'react-native-reanimated/plugin',
+],
 ```
 
 We're done! Now you can build and run the app on your device/simulator.
